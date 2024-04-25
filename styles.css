@@ -1,15 +1,28 @@
 /* Custom Styles for Portfolio */
 
 /* Header Styles */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
 header img {
     display: block;
     margin: 0 auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+header h1, header p {
+    margin: 20px 0;
 }
 
 /* Project Card Styles */
 .project-card {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -36,5 +49,11 @@ header img {
     .project-details {
         flex: 100%;
         max-width: 100%;
+    }
+
+    header img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
     }
 }
