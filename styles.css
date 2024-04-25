@@ -38,15 +38,37 @@ header h1, header p {
     padding-left: 20px;
 }
 
+/* App Design Card Styles */
+.app-design-card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.app-design-img {
+    flex: 0 0 50%; /* 50% width */
+    max-width: 50%;
+    height: auto;
+}
+
+.app-design-details {
+    flex: 0 0 50%; /* 50% width */
+    max-width: 50%;
+    padding-left: 20px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .project-card {
+    .project-card,
+    .app-design-card {
         flex-direction: column;
         align-items: flex-start;
     }
 
     .project-gif,
-    .project-details {
+    .project-details,
+    .app-design-img,
+    .app-design-details {
         flex: 100%;
         max-width: 100%;
     }
@@ -60,12 +82,15 @@ header h1, header p {
 
 /* GitHub Pages Specific Styles */
 @media (min-width: 992px) {
-    .project-card {
+    .project-card,
+    .app-design-card {
         flex-wrap: wrap;
     }
 
     .project-gif,
-    .project-details {
+    .project-details,
+    .app-design-img,
+    .app-design-details {
         flex: 0 0 100%;
         max-width: 100%;
     }
